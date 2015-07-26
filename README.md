@@ -1,5 +1,5 @@
 # wp-ftp-backup
-Function that allows you to upload files inside Wordpress uploads folder to a FTP or CDN with a cron job
+Script that allows you to upload files inside Wordpress uploads folder to a FTP or CDN with a cron job. Basically this puts all the new files the day which the script is executed.
 
 Usage: `php ./wp-ftp-backup.php up`
 
