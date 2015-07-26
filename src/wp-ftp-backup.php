@@ -43,7 +43,7 @@ if($_SERVER['argv']['1'] == "up")
 		{
 			if(ftp_mkdir($connect, date("Y")))
 			{
-				echo "Year directory ".date("Y")." was created successfully in root directory\n";
+				echo "Year directory ".date("Y")." was created successfully\n";
 			}
 		}
 
@@ -51,7 +51,7 @@ if($_SERVER['argv']['1'] == "up")
 		{
 			if(ftp_mkdir($connect, $dt))
 			{
-				echo "Month directory ".$dt." was created successfully in root directory\n";
+				echo "Month directory ".$dt." was created successfully\n";
 			}
 		}
 
