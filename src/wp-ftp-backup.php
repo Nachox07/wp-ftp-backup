@@ -37,7 +37,7 @@ if($_SERVER['argv']['1'] == "up")
 
 		echo "Uploading files...\n";
 
-		/* We create necessary folders at beginning of the month and year */
+		/* We create necessary folders at the beginning of the month and year */
 
 		if(date("m/d") == "01/01")
 		{
