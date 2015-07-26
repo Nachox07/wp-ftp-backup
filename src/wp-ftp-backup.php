@@ -21,7 +21,7 @@ if($_SERVER['argv']['1'] == "up")
 	$connect = ftp_connect($ftp_server) or die ("Connection error");
 	$result = ftp_login($connect, $ftp_user, $ftp_pass);
 
-	/* Pasive mode */
+	/* Passive mode */
 
 	ftp_pasv($connect, true);
 
@@ -37,7 +37,7 @@ if($_SERVER['argv']['1'] == "up")
 
 		echo "Uploading files...\n";
 
-		/* We create neccesary folders at strat of the month and year */
+		/* We create necessary folders at beginning of the month and year */
 
 		if(date("m/d") == "01/01")
 		{
