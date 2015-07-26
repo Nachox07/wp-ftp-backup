@@ -59,7 +59,7 @@ if($_SERVER['argv']['1'] == "up")
 		{
 			if(date('Y/m/d', filectime('../wp-content/uploads/'.$dt.'/'.$entry)) == $today)
 			{
-				if(ftp_put($connect, "./".$dt."/".$entry, '../wp-content/uploads/'.$dt.'/'.$entry, FTP_ASCII))
+				if(ftp_put($connect, './'.$dt.'/'.$entry, '../wp-content/uploads/'.$dt.'/'.$entry, FTP_ASCII))
 				{
 	    			echo $entry." uploaded\n";
 				}
