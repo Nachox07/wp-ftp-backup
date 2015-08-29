@@ -37,7 +37,7 @@ if($_SERVER['argv']['1'] == "up")
 
 		echo "Uploading files...\n";
 
-		/* We create necessary folders at the beginning of the month and year */
+		/* We create necessary folders at the beginning of the month and the year */
 
 		if(date("m/d") == "01/01")
 		{
@@ -61,7 +61,7 @@ if($_SERVER['argv']['1'] == "up")
 			{
 				if(ftp_put($connect, './'.$dt.'/'.$entry, '../wp-content/uploads/'.$dt.'/'.$entry, FTP_ASCII))
 				{
-	    			echo $entry." uploaded\n";
+	    				echo $entry." uploaded\n";
 				}
 			}
 		}
