@@ -8,17 +8,17 @@
 
 /* Restriction to execute command php ./wp-ftp-backup.php up */
 
-if($_SERVER['argv']['1'] == "up")
+if($_SERVER['argv']['1'] == 'up')
 {
-	$ftp_server = "127.0.0.1";
-	$ftp_user = "MyUser";
-	$ftp_pass = "MyPassword";
+	$ftp_server = '127.0.0.1';
+	$ftp_user = 'MyUser';
+	$ftp_pass = 'MyPassword';
 
 	$dt = date('Y/m');
 
 	$path = opendir('/wp-content/uploads/'.$dt);
 
-	$connect = ftp_connect($ftp_server) or die ("Connection error");
+	$connect = ftp_connect($ftp_server) or die ("Connection error\n");
 	$result = ftp_login($connect, $ftp_user, $ftp_pass);
 
 	/* Passive mode */
